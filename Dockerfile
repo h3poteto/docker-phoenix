@@ -5,6 +5,7 @@ RUN set -x && \
   apt-get install -y --no-install-recommends \
   nodejs \
   npm \
+  mysql-client \
   inotify-tools \
   git \
   curl && \
