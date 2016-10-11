@@ -1,4 +1,4 @@
-FROM elixir:1.3.2-slim
+FROM elixir:1.3.4-slim
 
 RUN set -x && \
   apt-get update && \
