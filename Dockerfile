@@ -1,5 +1,7 @@
 FROM elixir:1.3.4-slim
 
+ENV APP_DIR /var/opt/app
+
 RUN set -x && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
@@ -18,11 +20,11 @@ RUN set -x && \
 
 RUN useradd -m -s /bin/bash elixir
 RUN echo 'elixir:password' | chpasswd
-RUN mkdir -p /var/opt/app
+RUN mkdir -p ${APP_DIR}
 
 USER elixir
 
-WORKDIR /var/opt/app
+WORKDIR ${APP_DIR}
 
 RUN set -x && \
   yes | mix local.hex && \
