@@ -10,6 +10,7 @@ RUN set -x && \
   mysql-client \
   inotify-tools \
   git \
+  imagemagick \
   curl && \
   rm -rf /var/lib/apt/lists/* && \
   npm cache clean && \
