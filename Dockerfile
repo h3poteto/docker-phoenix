@@ -5,6 +5,8 @@ ENV APP_DIR /var/opt/app
 RUN set -x && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
+  build-essential \
+  erlang-dev \
   nodejs \
   npm \
   mysql-client \
