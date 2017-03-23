@@ -1,4 +1,4 @@
-FROM elixir:1.3.4-slim
+FROM elixir:1.4.2-slim
 
 ENV APP_DIR /var/opt/app
 
