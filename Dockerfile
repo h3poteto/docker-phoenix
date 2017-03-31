@@ -23,7 +23,8 @@ RUN set -x && \
 
 RUN useradd -m -s /bin/bash elixir
 RUN echo 'elixir:password' | chpasswd
-RUN mkdir -p ${APP_DIR}
+RUN mkdir -p ${APP_DIR} && \
+    chown -R elixir:elixir ${APP_DIR}
 
 USER elixir
 
