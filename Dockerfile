@@ -32,5 +32,5 @@ WORKDIR ${APP_DIR}
 
 RUN set -x && \
   yes | mix local.hex && \
-  yes | mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez
+  yes | mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez
 
