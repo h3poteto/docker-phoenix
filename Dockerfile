@@ -25,6 +25,6 @@ USER elixir
 WORKDIR ${APP_DIR}
 
 RUN set -x && \
-  yes | mix local.hex && \
-  yes | mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez
+  mix local.hex --force && \
+  mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez --force
 
