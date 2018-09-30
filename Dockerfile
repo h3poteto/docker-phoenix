@@ -12,7 +12,7 @@ RUN set -x && \
   inotify-tools \
   git \
   imagemagick \
-  gnupg \
+  postgresql-client \
   curl
 
 RUN useradd -m -s /bin/bash elixir
